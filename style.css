@@ -1,3 +1,69 @@
-.title {
-    color: blue;
+* {
+    font-size: 25px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: indigo;
+}
+
+.pad {
+    background-color: aqua;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons {
+    background-color: red;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.digits {
+    background-color: green;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.operators {
+    background-color: blue;
+    width: 100px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lastRow {
+    background-color: blueviolet;
+}
+
+.inputButton {
+    width: 100px;
+    background-color: bisque;
+    height: 100px;
+    border: 2px solid indigo;
+    border-radius: 14px;
+}
+
+.button {
+    background-color: bisque;
+    height: 100px;
+    width: 200px;
+    border: 2px solid indigo;
+    border-radius: 14px;
 }

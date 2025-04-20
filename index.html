@@ -8,27 +8,36 @@
 </head>
 <body>
     <h1 class="title">Calculator</h1>
-    <p>
-        <p>Field</p>
-    </p>
-    <p>
-        <button class="numsButton">1</button>
-        <button class="numsButton">2</button>
-        <button class="numsButton">3</button>
-        <button class="numsButton">4</button>
-        <button class="numsButton">5</button>
-        <button class="numsButton">6</button>
-        <button class="numsButton">7</button>
-        <button class="numsButton">8</button>
-        <button class="numsButton">9</button>
-        <button class="numsButton">0</button>
-    </p>
-    <p>
-        <button class="operatorButton">+</button>
-        <button class="operatorButton">-</button>
-        <button class="operatorButton">*</button>
-        <button class="operatorButton">/</button>
-    </p>
+    
+    <p id="display">Enter a promt</p>
+    
+    <div class="pad">
+        <div class="buttons">
+            <div class="digits">
+                <button class="inputButton" id="1">1</button>
+                <button class="inputButton" id="2">2</button>
+                <button class="inputButton" id="3">3</button>
+                <button class="inputButton" id="4">4</button>
+                <button class="inputButton" id="5">5</button>
+                <button class="inputButton" id="6">6</button>
+                <button class="inputButton" id="7">7</button>
+                <button class="inputButton" id="8">8</button>
+                <button class="inputButton" id="9">9</button>
+                <button class="inputButton" id="0">0</button>
+            </div>
+            <div class="operators">
+                <button class="inputButton">+</button>
+                <button class="inputButton">-</button>
+                <button class="inputButton">*</button>
+                <button class="inputButton">/</button>
+            </div>
+        </div>
+        <div class="lastRow">
+            <button class= "button" id="equals">=</button>
+            <button class= "button" id="clear">Clear</button>
+        </div>
+    </div>
+    
 
     <script src="script.js"></script>
 </body>
