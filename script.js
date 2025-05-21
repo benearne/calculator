@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         else {
             result = operate(numbers, operators);
             // result anzeigen
-            display.innerHTML = "Result: " + result;
+            display.innerHTML = result;
             
             input = [];
             numbers = [];
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // event listener for clear
     clear.addEventListener("click", function(event) {
         input = [];
-        display.innerHTML = "Enter a promt";
+        display.innerHTML = " ";
     })
 
     // NUMBERS AND OPERATORS
@@ -94,11 +94,21 @@ document.addEventListener("DOMContentLoaded", function() {
                     result *= nextNumber;
                     break;
                 case '/':
+                        if (nextNumber === 0) {
+                            return "Cant devide by zero!";
+                        }
                         result /= nextNumber;
-                        break;
+                        break;  
             }
         }
-    return result;
+    if (typeof result === "number") {
+        if (!Number.isInteger(result)) {
+            return result.toFixed(2)
+        }
+        else {return result}
+    } else {
+        return parseFloat(result)
+    };
     console.log(result)
     }
 })
